@@ -32,7 +32,7 @@ def set_step(username: str, password: str, step: str):
 
 def main(username, password, start_step):
     while True:
-        if datetime.now().hour==8:
+        if datetime.now().hour==00:
             step = start_step
             if datetime.now().weekday() in [1,2,3,4,5]: # 工作日
                 step = step + random.randint(88, 666)
@@ -63,8 +63,8 @@ def main(username, password, start_step):
 
 if __name__ == '__main__':
 
-    username = "你自己的用户名"
-    password = "你自己的密码"
+    username = "13892549139"
+    password = "dl212121"
     step = 1978 # 起始步数
 
     main(username, password, step)
